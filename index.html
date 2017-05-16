@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>pve-career-day-presentation-2017</title>
+
+    <link rel="stylesheet" href="reveal.js-3.5.0/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js-3.5.0/css/theme/black.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js-3.5.0/css/print/pdf.css' : 'reveal.js-3.5.0/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>PVE Career Day</h1>
+            <small>(05/18/17 presentation by Brandon Rockhold)</small>
+            <!-- TODO Add a picture of PVE as the background -->
+        </section>
+
+        <section>
+            <h3>Who am I?</h3>
+            <ul>
+                <li>Brandon Rockhold</li>
+                <li>Lead Architect at Cerner</li>
+                <li>Father of two PVE kids (Caden and Lexi)</li>
+                <li>I like playing video games and guitar, solving problems, and creating things</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<script src="reveal.js-3.5.0/lib/js/head.min.js"></script>
+<script src="reveal.js-3.5.0/js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        transition: 'convex',
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'reveal.js-3.5.0/plugin/markdown/marked.js'},
+            {src: 'reveal.js-3.5.0/plugin/markdown/markdown.js'},
+            {src: 'reveal.js-3.5.0/plugin/notes/notes.js', async: true},
+            {
+                src: 'reveal.js-3.5.0/plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.configure({
+                        tabReplace: '    ',
+                        languages: ['java'],
+                    }),
+                            hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
